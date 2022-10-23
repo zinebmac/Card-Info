@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor_Interactive card details form</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<body>
+  <div class="main">
+    <div class="top">
+      <div class="back">
+        <h4 id="cvc"></h4>
+      </div>
+      <div class="front">
+        <div class="col">
+          <div class="row">
+            <h4 class="big"></h4>
+            <h4 class="sml"></h4>
+          </div>
+          <div class="footer">
+              <h2 id="num"></h2>
+              <div class="info">
+                <div id="name"></div>
+                <div id="date"></div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="btm">
+      <div class="form">
+        <form method="post">
+          <label for="name">
+            <h4>Cardholder name</h4>
+            <input type="text" name="name" id="nameF" placeholder="e.g. Jane Appleseed">
+            <p class="infoN"></p>
+          </label>
+          <label for="num">
+            <h4>card number</h4>
+            <input type="number" name="num" id="numF" placeholder="e.g. 1234 5678 9123 0000">
+            <p class="infoU"></p>
+          </label>
+          <div class="container">
+            <label for="date">
+              <h4>exp. date (mm/yy)</h4>
+              <div class="mini">
+                <input type="number" name="month" id="monthF" placeholder="MM">
+                <input type="number" name="year" id="yearF" placeholder="YY">
+              </div>
+              <p class="infoD"></p>
+            </label>
+            <label for="cvc">
+              <h4>cvc</h4>
+              <input type="number" name="cvc" id="cvcF" placeholder="e.g. 123">
+              <p class="infoC"></p>
+            </label>
+          </div>
+          <button type="button" class="btn" id="confirm">Confirm</button>
+        </form>
+      </div>
+      <div class="confirmation">
+        <h2 class="check bi bi-check-lg"></h2>
+        <h2 class="lg">Thank you!</h2>
+        <h4 class="md">we've added your card details</h4>
+        <button type="button" class="btn">Continue</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
